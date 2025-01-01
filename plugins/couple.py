@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw
 from pyrogram import filters
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from TheApi import api
+#from TheApi import api
 from ChiefMusic import app
 
 from utils import get_couple, get_image, save_couple
