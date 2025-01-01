@@ -1,5 +1,5 @@
 from pyrogram import filters
-from SafoneAPI import SafoneAPI
+from TheAPI import api
 from ChiefMusic import app
 
 
