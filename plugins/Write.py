@@ -4,7 +4,7 @@
 import os
 
 from PIL import Image, ImageDraw, ImageFont
-ChiefMusic import app as register
+from ChiefMusic import app as register
 
 def text_set(text):
     lines = []
