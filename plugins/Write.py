@@ -4,7 +4,7 @@
 import os
 
 from PIL import Image, ImageDraw, ImageFont
-from ChiefMusic import app as register
+from ChiefMusic import app
 
 def text_set(text):
     lines = []
@@ -22,7 +22,7 @@ def text_set(text):
     return lines[:25]
 
 
-@register(pattern="^/write ?(.*)")
+@app.on_message(filters.command("bored", prefixes="/"))
 async def writer(event):
     if event.reply_to:
         reply = await event.get_reply_message()
