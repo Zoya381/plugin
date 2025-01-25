@@ -5,6 +5,7 @@ import os
 
 from PIL import Image, ImageDraw, ImageFont
 from ChiefMusic import app
+from pyrogram import filters
 
 def text_set(text):
     lines = []
