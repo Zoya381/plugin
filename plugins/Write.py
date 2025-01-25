@@ -4,7 +4,7 @@
 import os
 
 from PIL import Image, ImageDraw, ImageFont
-from Yuriko.events import register
+ChiefMusic import app as register
 
 def text_set(text):
     lines = []
@@ -32,9 +32,9 @@ async def writer(event):
     else:
         return await event.reply("Give some Text")
     k = await event.reply("On My way 😂..")
-    img = Image.open("Yuriko/resources/kertas.jpg")
+    img = Image.open("utils/kertas.jpg")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("Yuriko/resources/Tvs.TTF", 30)
+    font = ImageFont.truetype("utils/Tvs.TTF", 30)
     x, y = 150, 140
     lines = text_set(text)
     line_height = font.getsize("hg")[1]
