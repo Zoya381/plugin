@@ -23,7 +23,7 @@ def text_set(text):
     return lines[:25]
 
 
-@app.on_message(filters.command("bored", prefixes="/"))
+@app.on_message(filters.command("write", prefixes="/"))
 async def writer(event):
     if event.reply_to:
         reply = await event.get_reply_message()
